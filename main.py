@@ -57,6 +57,10 @@ def not_found(e):
     logging.error(e)
     return response_with(resp.SERVER_ERROR_404)
 
+@app.route('/', methods=['GET'])
+def home():
+    return "Welcome to the Login Demo Site"
+
 #@app.route('/api/spec')
 #def spec():
     #swag = swagger(app, prefix='/api')
