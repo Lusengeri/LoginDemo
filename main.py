@@ -128,4 +128,4 @@ def create_app(app_config):
     return app
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run()
